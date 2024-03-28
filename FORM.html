@@ -1,0 +1,63 @@
+<!DOCTYPE  html>
+
+<html>
+    <head>
+        <title> FORMS IN HTML</title>
+    </head>
+    <body>
+        <form action="processing.php" method="post" enctype="multipart/form-data">
+            <label for="student_name"> Name: </label>
+            <input type="text" name="student_name"  id="student_name">
+            <br>
+            
+            <label for="email_address"> Email: </label>
+            <input type="email" name="email_address"  id="email_address">
+            <br>
+
+            <textarea name="bio" id="bio" cols="30" rows="10">
+                Please enter your bio hear
+            </textarea>
+            <br>
+            <FIELdset>
+                <Legend>SUBJECTS</Legend>
+                <input type="checkbox" name="english" id="english" value="english" checked>
+                <label for="english"> English </label>
+                <br>
+                <input type="checkbox" name="Swahili" id="Swahili" value="Swahili" >
+                <label for="Swahili"> Swahili </label>
+                <br>
+                <input type="checkbox" name="science" id="science" value="science" >
+                <label for="science"> Science </label>
+                <br>
+
+            </FIELdset>
+            
+            <FIELdset>
+                <Legend>GENDER</Legend>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="male"> Male </label>
+                <br>
+                <input type="radio" name="gender" id="female" value="female" >
+                <label for="female"> Female </label>
+    
+            </FIELdset>
+            
+
+            <label for=""> Classes</label>
+            <select name="CLasses" id="CLasses">
+                <option value="">Select Prefered</option>
+                <option value="Physical">Physical</option>
+                <option value="Virtual">Virtual</option>
+            </select>
+            <br>
+
+            <label for="passport_photo">Passport photo: </label>
+            <input type="file" id="passport_photo" name="passport_photo" accept="videos/*">
+            <br>
+
+            <input type="button" id="btn_ok" name="btn_ok" value="OK!" onclick="">
+            <input type="reset" id="btn_rst" name="btn_rst" value="CLEAR!" onclick="">
+            <input type="SUBMIT" id="btn_sbt" name="btn_sbt" value="REGISTER!" onclick="">
+        </form>
+    </body>
+</html>
